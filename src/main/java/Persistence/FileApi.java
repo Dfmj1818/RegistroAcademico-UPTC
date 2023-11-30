@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Queue;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
 
@@ -23,8 +24,8 @@ public class FileApi {
 	private final View view;
 
 	public FileApi() {
-		gson=new Gson();
-		pcRoute="C:\\Users\\pepeg\\eclipse-workspace\\RegistroAcademicoUptc";
+		gson=new GsonBuilder().setPrettyPrinting().create();
+		pcRoute="C:\\Users\\pepeg\\Downloads\\proyectos\\RegistroAcademicoUptc\\src\\main\\java\\Persistence";
 		view=new View();
 	}
 
@@ -51,7 +52,7 @@ public class FileApi {
 		}catch(IOException e){
 			view.showMessage(e.getMessage());
 		}
-
+	
 
 	}
 

@@ -4,7 +4,9 @@ public class Student {
 
 	private long studentCode;
 	private String universityName;
-
+    private int id;
+    private boolean isAttended;
+    
 	public Student() {
 
 	}
@@ -23,6 +25,22 @@ public class Student {
 
 	public String getUniversityName() {
 		return universityName;
+	}
+	
+	public void setId(int id) {
+		this.id=id;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	
+	public void setIsAttended(boolean isAttended) {
+		this.isAttended=isAttended;
+	}
+	
+	public boolean getIsAttended() {
+		return isAttended;
 	}
 
 	@Override

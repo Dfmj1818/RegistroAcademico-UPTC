@@ -3,6 +3,8 @@ package View;
 import java.util.Queue;
 import java.util.Scanner;
 
+import Exceptions.InvalidInputException;
+
 public class View {
 	private Scanner scanner;
 
@@ -34,12 +36,12 @@ public class View {
 				}
 			}
 			else {
-				showMessage("Entrada Vacia o en formato Incorrecto");
+				throw new InvalidInputException();
 			}
 		}
 		return input;
 	}
-	
+
 	public void viewQueue(Queue<?>queue){
 		queue.forEach(System.out::println);
 	}
