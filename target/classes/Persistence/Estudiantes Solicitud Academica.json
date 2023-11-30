@@ -1,0 +1,14 @@
+[
+  {
+    "studentCode": 0,
+    "universityName": "Estudiante 1",
+    "id": 1,
+    "isAttended": false
+  },
+  {
+    "studentCode": 0,
+    "universityName": "Estudiante 2",
+    "id": 2,
+    "isAttended": false
+  }
+]
